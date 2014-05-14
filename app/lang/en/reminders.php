@@ -21,4 +21,8 @@ return array(
 
 	"sent" => "Password reminder sent!",
 
+    "ff-error" => 'Upload failed. Try again with a valid image and caption.',
+
+    "ff-success" => "You're funny face has been added!",
+
 );

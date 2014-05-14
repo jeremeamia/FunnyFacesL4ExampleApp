@@ -79,3 +79,15 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+/*
+|--------------------------------------------------------------------------
+| IoC Configuration
+|--------------------------------------------------------------------------
+|
+| Next we will add anything else we need to add to the IoC.
+*/
+
+App::singleton('funnyfaces', function() {
+    return new FunnyFace(App::make('aws'), Config::get('funnyfaces'));
+});

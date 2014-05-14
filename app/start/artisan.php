@@ -11,3 +11,5 @@
 |
 */
 
+Artisan::add(new FunnyFace\SetupCommand);
+Artisan::add(new FunnyFace\TeardownCommand);
