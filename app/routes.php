@@ -1,6 +1,6 @@
 <?php
 
-Route::get('show', function() {
+Route::get('/', function() {
     return View::make('show', [
         'faces'   => App::make('funnyfaces')->latest(),
         'success' => Session::get('success'),
@@ -22,7 +22,7 @@ Route::post('upload', ['before' => 'csrf', function() {
         }
 
         App::make('funnyfaces')->add($file, $caption);
-        return Redirect::to('show')->with('success', true);
+        return Redirect::to('/')->with('success', true);
     } catch (\Exception $e) {
         Log::error($e->getMessage());
         return Redirect::to('upload')->with('success', false);

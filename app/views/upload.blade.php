@@ -22,7 +22,7 @@ Upload Your Funny Face!
     <div class="control-group">
         <div class="controls">
             <button type="submit" class="btn btn-primary"><b class="icon-ok icon-white"></b> Add Funny Face</button>
-            <a href="{{ URL::to('show') }}" class="btn"><b class="icon-chevron-left"></b> Go Back</a>
+            <a href="{{ URL::to('/') }}" class="btn"><b class="icon-chevron-left"></b> Go Back</a>
         </div>
     </div>
 {{ Form::close() }}
