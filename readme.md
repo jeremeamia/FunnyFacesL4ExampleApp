@@ -17,5 +17,6 @@ The you can use `php artisan serve` to run the app locally, or you can deploy
 to [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/).
 
 This application was used as an example in the
-[AWS for Artisans](https://joind.in/talk/view/11330) presentation at
+[AWS for Artisans](https://joind.in/talk/view/11330) presentation 
+([slides](https://speakerdeck.com/jeremeamia/aws-for-artisans)) at
 [Laracon 2014](https://conference.laravel.com/).
