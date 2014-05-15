@@ -1,24 +1,21 @@
-## Laravel PHP Framework
+# Funny Face App
 
-[![Build Status](https://img.shields.io/travis/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Version](https://img.shields.io/github/tag/laravel/framework.svg)](https://github.com/laravel/framework/releases)
-[![Dependency Status](https://www.versioneye.com/php/laravel:framework/badge.svg)](https://www.versioneye.com/php/laravel:framework)
+This is an example application implemented with the Laravel 4 framework to
+showcase the usage of the [AWS SDK for PHP](https://github.com/aws/aws-sdk-php).
+The funny face app displays funny faces ("/" route" that you can upload via the
+form ("upload" route). This application is intended to be an example only, and
+should not be deployed into a production environment.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+To setup the app you will need to:
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+1. Run `composer.phar install` to install the dependencies including Laravel and
+   the AWS SDK for PHP.
+2. Create an [AWS credentials file](http://docs.aws.amazon.com/aws-sdk-php/guide/latest/credentials.html#using-the-aws-credentials-file-and-credential-profiles).
+3. Run `php artisan funnyface:setup` to create an S3 bucket and DynamoDB table.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+The you can use `php artisan serve` to run the app locally, or you can deploy
+to [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/).
 
-## Official Documentation
-
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
-
-### Contributing To Laravel
-
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+This application was used as an example in the
+[AWS for Artisans](https://joind.in/talk/view/11330) presentation at
+[Laracon 2014](https://conference.laravel.com/).
